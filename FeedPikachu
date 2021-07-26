@@ -142,6 +142,27 @@ empty = [
     e, e, e, e, e, e, e, e]
 
 
+apple = [
+    e, e, e, e, e, g, e, e,
+    e, r, r, r, g, r, r, e,
+    r, w, dp, r, r, r, r, r,
+    r, dp,r, r, r, r, r, r,
+    r, r, r, r, r, r, r, r,
+    r, r, r, r, r, r, r, r,
+    e, r, r, r, r, r, r, e,
+    e, e, r, r, r, r, e, e]
+
+watermelon = [
+    e, e, e, e, e, e, e, e,
+    w, r, e, r, r, r, r, w,
+    w, r, r, r, r, e, r, w,
+    w, r, r, e, r, r, r, w,
+    g, w, r, r, r, r, w, g,
+    dg, g, w, w, w, w, g, dg,
+    e, gr, g, g, g, g, dg, e]
+
+
+
 ########################################################################
     
 
@@ -176,7 +197,7 @@ def pikachuAnimate():
             sense.set_pixels(pikachuflip)
             time.sleep(0.5)
             sense.set_pixels(pikachu1)
-            mixer.music.load(pikachuSongs[1])
+            mixer.music.load(pikachuSongs[0])
             sense.set_pixels(pikachu)
             time.sleep(0.5)
             
@@ -186,7 +207,43 @@ def pikachuAnimate():
       
 while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or (userinput =="y"):
   
-    userinput = (input("Quit?: Yes. Play: ENTER FOOD HERE: "))    
+    userinput = (input("Quit?: Yes. Play: ENTER FOOD HERE: "))
+    if (userinput == "apple"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(apple)
+            mixer.music.load(pikachuSongs[1])
+    elif (userinput == "watermelon"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(watermelon)
+            mixer.music.load(pikachuSongs[1])
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+        
+    else:
+        sense.set_pixels(pikachu)
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+            sense.set_pixels(pikachuflip)
+            time.sleep(0.5)
+            sense.set_pixels(pikachuleft)
+            time.sleep(0.5)
+            sense.set_pixels(pikachuflip)
+            time.sleep(0.5)
+            sense.set_pixels(pikachuleft)
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+        
 
 
 #Stop the mixer
