@@ -1,4 +1,11 @@
 
+####################################
+#
+#Sarah Bass
+#Virtual Box shake program
+#
+####################################
+
 from sense_hat import SenseHat
 import time
 
@@ -12,7 +19,7 @@ r = (255, 0, 0)
 #empty or black
 e = (0,0,0)
 #white
-white = (255,255,255)
+w = (255,255,255)
 #cyan blue
 b = (0,255,255)
 #orange
@@ -54,7 +61,7 @@ rainbowicon2 = [
     dg, dg, m, m, dp, m, dg, dg, 
     b, b, dp, m, m, m, b, b,
     db, db, db, m, m, db, db, db, 
-    p, p, p, p, p, p, p, p,
+    p, p, p, p, p, p, p, p
     ]
 
 raspberryicon1 = [
@@ -89,6 +96,17 @@ raspberryiconStart = [
         b, b, m, r, r, m, b, b,
         b, b, b, b, b, b, b, b]
 
+raspberryicon2Start = [
+        b, b, b, b, b, b, b, b,
+        g, g, g, b, b, g, g, g,
+        g, g, g, m, r, g, g, g,
+        b, r, m, e, e, r, m, b,
+        b, m, r, m, r, m, r, b,
+        b, r, m, r, m, r, m, b,
+        b, m, r, m, r, m, r, b,
+        b, b, m, r, r, m, b, b]
+        
+
 iconblankStart = [
         b, b, b, b, b, b, b, b,
         b, b, b, b, b, b, b, b,
@@ -105,20 +123,25 @@ iconblankStart = [
 #Animation shows:
 #rainbow then movement then ends in reverse rainbow
 def start():
+        time.sleep(0.5)
         sense.set_pixels(iconblankStart)
         time.sleep(0.5)
-        sense.set_pixels(raspberryiconStart)
-        if word == 
+        for i in range (6):
+                sense.set_pixels(raspberryicon2Start)
+                time.sleep(1)
+                sense.set_pixels(raspberryiconStart)
+                time.sleep(1)
+        
         
 def shakeit():
         sense.set_pixels(rainbowicon1)
         time.sleep(0.5)
         sense.set_pixels(rainbowicon2)
         time.sleep(0.5)
-            for i in range (6):
+        for i in range (6):
                 sense.set_pixels(raspberryicon1)
                 time.sleep(0.5)
-                sense.set_pixels(raspberryicon1)
+                sense.set_pixels(raspberryicon2)
                 time.sleep(0.5)
         sense.set_pixels(rainbowicon2)
         time.sleep(0.5)
@@ -126,9 +149,14 @@ def shakeit():
         time.sleep(0.5)
 
 sense.clear()
-
+start()
 x, y, z = sense.get_accelerometer_raw().values()
 
 while x<2 and y<2 and z<2:
     x, y, z = sense.get_accelerometer_raw().values()
     shakeit()
+    start()
+    sense.clear()
+    
+sense.clear()
+
