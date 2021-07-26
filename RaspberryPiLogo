@@ -1,0 +1,134 @@
+
+from sense_hat import SenseHat
+import time
+
+sense = SenseHat()
+
+#color library codes
+#magenta
+m = (255,0,255)
+#red
+r = (255, 0, 0)
+#empty or black
+e = (0,0,0)
+#white
+white = (255,255,255)
+#cyan blue
+b = (0,255,255)
+#orange
+o = (255, 165,0)
+#yellow
+y = (255, 255, 0)
+#green
+g = (0, 255, 0)
+#deep pink
+dp = (255, 20, 147)
+#purple
+p = (138, 43, 226)
+#brown
+br = (210, 105, 30)
+#peachy skin tone
+sk = (255, 228, 196)
+#deepgreen
+dg = (0,128,0)
+#deep blue
+db = (0, 0, 225)
+
+rainbowicon1 = [
+    m, m, m, m, m, m, m, m,
+    r, r, r, r, r, r, r, r,
+    o, o, o, o, o, o, o, o,
+    y, y, y, y, y, y, y, y,
+    g, g, g, g, g, g, g, g,
+    b, b, b, b, b, b, b, b,
+    p, p, p, p, p, p, p, p,
+    dp, dp, dp, dp, dp, dp, dp, dp
+    ]
+
+
+rainbowicon2 = [
+    r, r, g, g, r, g, g, r,
+    o, o, g, g, g, g, o, o,
+    y, y, y, m, m, y, y, y,
+    w, w, m, dp, m, m, w, w,
+    dg, dg, m, m, dp, m, dg, dg, 
+    b, b, dp, m, m, m, b, b,
+    db, db, db, m, m, db, db, db, 
+    p, p, p, p, p, p, p, p,
+    ]
+
+raspberryicon1 = [
+    b, b, b, b, b, b, b, b,
+    b, b, g, g, g, g, b, b,
+    b, g, g, m, m, g, g, b,
+    b, b, m, dp, m, m, b, b,
+    b, b, m, m, dp, m, b, b,
+    b, b, dp, m, m, m, b, b,
+    b, b, b, m, m, b, b, b,
+    b, b, b, b, b, b, b, b
+    ]
+
+raspberryicon2 = [
+    b, g, g, b, b, g, g, b,
+    b, b, g, g, g, g, b, b,
+    b, b, b, m, m, b, b, b,
+    b, b, m, dp, m, m, b, b,
+    b, b, m, m, dp, m, b, b,
+    b, b, dp, m, m, m, b, b,
+    b, b, b, m, m, b, b, b,
+    b, b, b, b, b, b, b, b
+    ]
+
+raspberryiconStart = [
+        g, g, g, b, b, g, g, g,
+        g, g, g, m, r, g, g, g,
+        b, r, m, e, e, r, m, b,
+        b, m, r, m, r, m, r, b,
+        b, r, m, r, m, r, m, b,
+        b, m, r, m, r, m, r, b,
+        b, b, m, r, r, m, b, b,
+        b, b, b, b, b, b, b, b]
+
+iconblankStart = [
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b,
+        b, b, b, b, b, b, b, b
+        ]
+
+
+
+#Animation shows:
+#rainbow then movement then ends in reverse rainbow
+def start():
+        sense.set_pixels(iconblankStart)
+        time.sleep(0.5)
+        sense.set_pixels(raspberryiconStart)
+        if word == 
+        
+def shakeit():
+        sense.set_pixels(rainbowicon1)
+        time.sleep(0.5)
+        sense.set_pixels(rainbowicon2)
+        time.sleep(0.5)
+            for i in range (6):
+                sense.set_pixels(raspberryicon1)
+                time.sleep(0.5)
+                sense.set_pixels(raspberryicon1)
+                time.sleep(0.5)
+        sense.set_pixels(rainbowicon2)
+        time.sleep(0.5)
+        sense.set_pixels(rainbowicon1)
+        time.sleep(0.5)
+
+sense.clear()
+
+x, y, z = sense.get_accelerometer_raw().values()
+
+while x<2 and y<2 and z<2:
+    x, y, z = sense.get_accelerometer_raw().values()
+    shakeit()
