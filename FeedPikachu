@@ -14,7 +14,7 @@ from pygame.locals import *
 pygame.init()
 sense = SenseHat()
 
-pikachuSongs =  ("pikachusound1.mp3", "pikachusound2.mp3")
+pikachuSongs =  ["pikachusound1.mp3", "Pikachusound2.mp3"]
 
 ########################################################################
 #color library codes
@@ -118,7 +118,9 @@ pikachuleft = [
     e, y, y, e, y, b, o, o, 
     dp, y, y, y, dp, b, o, b,
     b, o, o, o, y, y, y, b,
-    o, b, o, b, b, b, b, o]
+    b, y, y, o, o, o, o, b,
+    o, b, o, b, b, b, b, o,
+    ]
 
 pikachuright = [
     b, e, e, b, b, b, b, e,
@@ -159,7 +161,31 @@ watermelon = [
     w, r, r, e, r, r, r, w,
     g, w, r, r, r, r, w, g,
     dg, g, w, w, w, w, g, dg,
-    e, gr, g, g, g, g, dg, e]
+    e, dg, g, g, g, g, dg, e,
+    e, e, e, e, e, e, e, e]
+
+pineapple = [
+    e, e, g, e, g, e, g, e,
+    e, e, e, g, g, g, e, e,
+    e, e, o, dg, g, br, e, e,
+    e, o, br, o, br, o, br, e,
+    e, br, o, br, o, br, br, e,
+    e, o, br, o, br, o, br, e,
+    e, br, o, br, o, br, br, e,
+    e, e, br, br, br, br, e, e]
+
+banana = [
+    e, e, e, e, e, y, y, e,
+    e, e, e, e, e, e, o, y,
+    e, e, e, e, e, o, br, o,
+    y, y, y, y, y, y, br, y,
+    o, y, y, y, y, br, y, y,
+    br, o, o, br, br, y, y, y,
+    o, y, y, y, y, y, y, e,
+    e, o, y, y, y, y, e, e]
+
+
+    
 
 
 
@@ -182,7 +208,7 @@ def pikachuAnimate():
             time.sleep(0.5)
             sense.set_pixels(pikachu)
             time.sleep(0.1)
-            mixer.music.load(pikachuSongs[0]) 
+            mixer.music.load(pikachuSongs[0])
             mixer.music.play()
             sense.set_pixels(pikachuright)
             time.sleep(0.5)
@@ -197,16 +223,14 @@ def pikachuAnimate():
             sense.set_pixels(pikachuflip)
             time.sleep(0.5)
             sense.set_pixels(pikachu1)
-            mixer.music.load(pikachuSongs[0])
             sense.set_pixels(pikachu)
             time.sleep(0.5)
             
 print ("Welcome to FEED PIKACHU")
 
-def pikachuAnimate():         
-      
-while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or (userinput =="y"):
-  
+pikachuAnimate()         
+userinput = "pikachu"      
+while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or (userinput =="y"):  
     userinput = (input("Quit?: Yes. Play: ENTER FOOD HERE: "))
     if (userinput == "apple"):
             mixer.music.set_volume(0.7)
@@ -216,7 +240,12 @@ while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or 
             sense.set_pixels(rainbowicon2)
             time.sleep(0.5)
             sense.set_pixels(apple)
-            mixer.music.load(pikachuSongs[1])
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
     elif (userinput == "watermelon"):
             mixer.music.set_volume(0.7)
             time.sleep(0.5)
@@ -225,24 +254,59 @@ while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or 
             sense.set_pixels(rainbowicon2)
             time.sleep(0.5)
             sense.set_pixels(watermelon)
-            mixer.music.load(pikachuSongs[1])
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+
+            elif (userinput == "banana"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(banana)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+
+            elif (userinput == "pineapple"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(pineapple)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
             sense.set_pixels(pikachu1)
             time.sleep(0.5)
         
     else:
+        time.sleep(0.5)
         sense.set_pixels(pikachu)
-            time.sleep(0.5)
-            sense.set_pixels(pikachu1)
-            time.sleep(0.5)
-            sense.set_pixels(pikachuflip)
-            time.sleep(0.5)
-            sense.set_pixels(pikachuleft)
-            time.sleep(0.5)
-            sense.set_pixels(pikachuflip)
-            time.sleep(0.5)
-            sense.set_pixels(pikachuleft)
-            time.sleep(0.5)
-            sense.set_pixels(pikachu1)
+        time.sleep(0.5)
+        sense.set_pixels(pikachu1)
+        time.sleep(0.5)
+        sense.set_pixels(pikachuflip)
+        time.sleep(0.5)
+        sense.set_pixels(pikachuleft)
+        time.sleep(0.5)
+        sense.set_pixels(pikachuflip)
+        time.sleep(0.5)
+        sense.set_pixels(pikachuleft)
+        time.sleep(0.5)
+        sense.set_pixels(pikachu1)
+        time.sleep(0.5)
         
 
 
