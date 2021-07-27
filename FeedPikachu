@@ -184,9 +184,135 @@ banana = [
     o, y, y, y, y, y, y, e,
     e, o, y, y, y, y, e, e]
 
+cherry =[
+    e, e, e, e, g, g, g, e,
+    e, e, e, g, e, g, e, e,
+    e, e, g, e, e, g, e, e,
+    e, e, g, e, e, r, r, e,
+    e, r, r, e, r, r, w, r,
+    r, r, w, r, e, r, r, r,
+    r, r, r, r, e, r, r, e,
+    e, r, r, e, e, e, e, e]
 
-    
+peach = [
+    e, e, sk, sk, sk, dp, e, e,
+    e, sk, sk, sk, sk, sk, dp, e,
+    sk, sk, sk, sk, sk, sk, sk, dp,
+    sk, sk, sk, sk, sk, sk, sk, dp,
+    dp, sk, dp, sk, sk, sk, sk, dp,
+    e, dp, dp, dp, sk, sk, dp, e,
+    g, g, dp, dp, dp, dp, dp, g,
+    e, e, e, e, g, g, g, e]
 
+pear = [
+    e, e, e, br, dg, g, e,e, 
+    e, e, g, g, e, dg, g, e,
+    e, g, y, g, g, e, e, e,
+    e, g, y, g, g, e, e, e,
+    g, y, g, g, g, dg, e, e,
+    g, y, g, g, g, dg, e, e,
+    dg, g, g, g, dg, dg, e, e,
+    e, dg, dg, dg, dg, e, e, e]
+
+orange = [
+    e, e, r, r, g, g, e, e,
+    e, o, o, o, dg, g, r, e,
+    o, y, y, o, o, o, r, r,
+    o, y, y, o, o, o, r, r,
+    o, o, o, o, o, o, r, r,
+    o, y, o, o, o, o, r, r,
+    e, o, o, o, ,o r, r, e,
+    e, e, r, r, r, r, e, e]
+
+grape = [
+    e, e, e, e, e, e, e, g,
+    e, e, b, b, e, b, w, e,
+    e, e, db, db, db, b, b, e,
+    e, b, db, e, w, db, db, e,
+    e, b, db, b, b, db, b, w,
+    e, db, db, db, db, db, b, b,
+    b, db, b, w, db, db, db, e,
+    b, db, b, b, e, b, b, e]
+
+strawberry = [
+    e, e, r, r, g, g, e, g,
+    e, r, w, r, r, dg, g, e,
+    e, w, r, r, g, g, dg, g,
+    m, o, r, r, g, g, r, g,
+    r, r, r, o, r, r, r, r,
+    r, r, r, r, r, r, r, r,
+    r, o, r, r, r, r, r, e,
+    m, r, r, r, m, e, e, e]
+
+tomato = [
+    e, e, e, e, e, e, e, e,
+    e, dg, e, g, g, e, dg, e,
+    e, r, dg, dg, dg, dg, r, e,
+    r, dg, r, dg, dg, r, dg, r,
+    r, w, dp, r, r, r, r, r,
+    r, dp, r, r, r, r, r, r,
+    r, r, r, r, r, r, r, r,
+    e, r, r, r, r, r, r, e]
+
+radish = [
+    e, g, g, e, g, g, g, e,
+    g, e, g, g, g, e, g, g,
+    e, e, e, g, e, e, e, e,
+    e, dp, dp, dp, dp, dp, e, e,
+    dp, sk, sk, dp, sk, sk, dp, e,
+    w, w, w,sk, w, w, w, e,
+    e, w, w, w, w, w, e, e,
+    e, e, e, w, e, e, e, e]
+
+pizza = [
+    o, o, o, o, e, e, e, e,
+    br, br, br, o, o, o, e, e,
+    y, r, y, br, br, o, o, e,
+    r, r, r, y  y, br, o, e,
+    y, r, y, y, y, br, o, o,
+    y, y, y, y, r, r, br, o,
+    y, r, r, y, r, r, br, o,
+    y, r, r, y, y, y, br, o]
+
+pancakes = [
+    e, br, br, y, y, br, br, e,
+    br, br, br, y, y, br, br, br,
+    sk, br, br, br, br, b,r br, sk,
+    b, sk, m, sk, sk, sk, sk, br,
+    sk, br, m. br, br, br, br, sk,
+    br, sk, m, sk, sk, sk, sk, br,
+    sk, br, m, br, br, br, br, sk,
+    e, sk, m, sk, sk, sk, sk e]
+
+raspberry = [
+        g, g, g, b, b, g, g, g,
+        g, g, g, m, r, g, g, g,
+        b, r, m, e, e, r, m, b,
+        b, m, r, m, r, m, r, b,
+        b, r, m, r, m, r, m, b,
+        b, m, r, m, r, m, r, b,
+        b, b, m, r, r, m, b, b,
+        b, b, b, b, b, b, b, b]
+
+blueberry = [
+    e, e, e, r, br, e, e, e,
+    e, e, e, br, e, e, e, e,
+    e, db, b, br, b, b, e, e,
+    dp, b, b, b, b, w, b, e,
+    db, b, b, b, w, w, b, e,
+    db, b, b, b, b, b, b, e,
+    db, db, b, b, b, b, db, e,
+    e, db, db, db, db, db, e, e]
+
+cake = [
+    e, e, e, r, r, w, w, e,
+    e, e, w, r, r, w, w, w,
+    e, w, w, w, w, w, w, w,
+    w, w, w, w, w, w, w, w,
+    br, sk, sk, br, br, sk, sk, br,
+    sk, br, br, sk, sk, br, br, sk,
+    br, br, br, br, br, br, br, br,
+    sk, w, w, w, w, w, w, sk]
 
 
 ########################################################################
@@ -228,6 +354,7 @@ def pikachuAnimate():
             
 print ("Welcome to FEED PIKACHU")
 
+
 pikachuAnimate()         
 userinput = "pikachu"      
 while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or (userinput =="y"):  
@@ -261,7 +388,7 @@ while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or 
             sense.set_pixels(pikachu1)
             time.sleep(0.5)
 
-            elif (userinput == "banana"):
+    elif (userinput == "banana"):
             mixer.music.set_volume(0.7)
             time.sleep(0.5)
             sense.set_pixels(rainbowicon1)
@@ -276,7 +403,7 @@ while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or 
             sense.set_pixels(pikachu1)
             time.sleep(0.5)
 
-            elif (userinput == "pineapple"):
+    elif (userinput == "pineapple"):
             mixer.music.set_volume(0.7)
             time.sleep(0.5)
             sense.set_pixels(rainbowicon1)
@@ -284,6 +411,201 @@ while not (userinput == "yes") or (userinput =="YES") or (userinput =="Yes") or 
             sense.set_pixels(rainbowicon2)
             time.sleep(0.5)
             sense.set_pixels(pineapple)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+
+    elif (userinput == "pear"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(pear)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu)
+            time.sleep(0.5)
+
+    elif (userinput == "peach"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(peach)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu)
+            time.sleep(0.5)
+
+    elif (userinput == "cherry"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(cherry)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+
+    elif (userinput == "orange"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(orange)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachuleft)
+            time.sleep(0.5)
+
+    elif (userinput == "pancakes"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(pancakes)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachuflip)
+            time.sleep(0.5)
+
+    elif (userinput == "radish"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(radish)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu1)
+            time.sleep(0.5)
+            
+    elif (userinput == "pizza"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(pizza)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu)
+            time.sleep(0.5)
+
+    elif (userinput == "tomato"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(tomato)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachuflip)
+            time.sleep(0.5)
+
+    elif (userinput == "cake"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(cake)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachuflip)
+            time.sleep(0.5)
+
+    elif (userinput == "grapes"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(grape)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu)
+            time.sleep(0.5)
+
+    elif (userinput == "strawberry"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(strawberry)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu)
+            time.sleep(0.5)
+
+    elif (userinput == "blueberry"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(blueberry)
+            time.sleep(0.5)
+            mixer.music.load("Pikachusound2.mp3")
+            mixer.music.play()
+            time.sleep(0.5)
+            sense.set_pixels(pikachu)
+            time.sleep(0.5)
+
+    elif (userinput == "raspberry"):
+            mixer.music.set_volume(0.7)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon1)
+            time.sleep(0.5)
+            sense.set_pixels(rainbowicon2)
+            time.sleep(0.5)
+            sense.set_pixels(raspberry)
             time.sleep(0.5)
             mixer.music.load("Pikachusound2.mp3")
             mixer.music.play()
